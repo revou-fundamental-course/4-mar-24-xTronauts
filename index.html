@@ -1,52 +1,112 @@
 <!DOCTYPE html>
+<html lang="en">
+</html>
 <head>
-    <title>Calculator BMI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator BMI - Prisnandar Wira Pratama</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Calculator BMI - Prisnandar Wira Pratama</h1>
+        <h1>Hero Mass Index Calculator</h1>
     </header>
     <main>
         <div class="main-container">
             <!-- Form Display -->
             <div class="container-item">
-                <h2>Form BMI</h2>
                 <section>
-                    <p>Berat Badan Ideal adalah ...</p>
+                    <p class="description">HMI's your superhero starter kit! Like <strong>Iron Man vs. Hulk</strong>, it uses height and weight to see if you're built to fly or bring the fluffy justice. Scale time, true believer - clouds or cuddles?</p>
                 </section>
                 <section class="container-form">
-                    <div>
-                        <label>Jenis Kelamin</label><br />
-                        <input type="radio" name="sex" id="sex-man">
-                        <label for="sex-man">Laki-laki</label>
-                        <input type="radio" name="sex" id="sex-woman">
-                        <label for="sex-woman">Perempuan</label>
+                    <div class="container">
+                        <h5> Choose your Gender:</h5>
+                        <input type="radio" name="sex" id="sex-men" class="image-radio">
+                        <label for="sex-men" class="image-label">
+                            <img src="./asset/hero_boy.png" alt="Male Image" class="image">
+                            <div class="middle">
+                                <div class="text">Male</div>
+                            </div>
+                        </label>
+                    
+                        <input type="radio" name="sex" id="sex-women" class="image-radio">
+                        <label for="sex-women" class="image-label">
+                            <img src="./asset/hero_girl.png" alt="Female Image" class="image">
+                            <div class="middle">
+                                <div class="text">Female</div>
+                            </div>
+                        </label>
                     </div>
                     <div>
-                        <label>Berat Badan (kg)</label><br />
+                        <label>Height (cm)</label><br />
                         <input type="number" class="form-item">
                     </div>
                     <div>
-                    <button type="button" id="calculator-button">Hitung BMI</button>
-                    <button type="button">Reset</button>
+                        <label>Weight (kg)</label><br />
+                        <input type="number" class="form-item">
+                    </div>
+                    <div>
+                        <label>Age</label><br />
+                        <input type="number" class="form-item">
+                    </div>
+                    <div class="button">
+                    <button type="button" id="submit-button"><strong>Assemble!</strong> Calculate Hero Mass Index (HMI)</button>
+                    <button type="button" id="reset-button"><strong>Recalibrate</strong></button>
+                    </div>
+                </section>
+                <div class="feature">
+                    <ol> <h3>Feature Advantages</h3>
+                        <hr>
+                        <li><strong>Suit Up!</strong> We start by measuring your "hero weight" that's just your regular weight.</li>
+                        <li><strong>Calling Captain Ideal?</strong> BMI checks your weight against height to see if it falls in the "superhero landing zone."</li>
+                        <li><strong>Mission: Get Fit!</strong> If your weight needs a sidekick for support, a personalized "weight loss workout" gets prepped to help you reach your fitness goals!</li>
+                        <hr>
+                    </ol>
+                </div>
+                <section>
+                    <div class="item">
+                        <p><strong>Important Note:</strong> This BMI calculator is for adult men and women only (pregnant and breastfeeding women should chat with a doctor first). Remember, the BMI result is just a starting point. Always consult a healthcare professional for personalized advice.</p>
+                        <p><strong>Ready to suit up?</strong> Let's find your BMI! BMI stands for Body Mass Index, and it's a tool that uses your height and weight to estimate your weight category.</p>
+                    </div>
                 </section>
                     </div>
             <!-- Form Result -->
             <div class="container-item">
                 <h2>Result</h2>
-                <section class="container-result">
-                    <h4>Berat Badan Lebih</h4>
+                <!--<section class="container-result">
+                    <h4>Uh Oh, Warning Lights!</h4>
                     <h1>0</h1>
-                    <h4>Anda Memiliki Berat Badan Berlebih</h4>
-                    <button type="button">Download Hasil BMI</button>
+                    <h4>Calling Captain Chunky? Your weight falls into the "overweight" category.</h4>
+                    <button type="button"><strong>Ready to Get Fit?</strong><br /> Don't worry, we won't download your "results" as a villain might!</button>
                 </section>
+                <div class="item">
+                    <p>Your HMI (Hero Mass Index) might be a bit on the "needs a training montage" side.</p>
+                    <p>Looking a little more <strong>Hulk smash</strong> than <strong>Iron Man Suit</strong> these days? Time to level up your fitness game!</p>
+                    <p>Gotta fuel your inner hero, right? Mastering your diet and exercise routine is key to peak performance.</p>
+                    <p>Shedding some extra weight can help you reach your peak superhero potential.</p>
+                </div>
+                <div class="button.result">
+                    <button type="button"><strong>Team up with a nutritional sidekick through our app!</strong>
+                    <button type="button"><strong>Snag a consult with a registered nutritional guru online!</strong>
+                </div>
+                <div class="item">
+                    <p>While HMI is a good starting point, true hero health requires a full checkup with a doc. Talk to them about any concerns you might have.</p>
+                </article>
+                <div class="item">
+                    <ul><h3>Even heroes can face health villains like:</h3></ul>
+                        <li>Diabetes</li>
+                        <li>High Blood Pressure</li>
+                        <li>Heart Trouble</li>
+                        <li>Joint Pain</li>
+                </ul>
+                <p>Let's keep those villains at bay!</p>
+                </div>-->
             </div>
         </div>
     </main>
     <footer></footer>
-    <script src="js/script.js"><</script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
