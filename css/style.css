@@ -18,15 +18,15 @@ header, h1 {
 }
 
 .container-item {
-  width: 100%;
+  width: 90%;
   border: 0;
   flex-basis: 50%;
   box-shadow: 3px 3px 90px -20px rgb(75, 9, 8);
   padding: 2em 2em;
   background: rgb(106, 12, 11);
-  border-radius: 50px;
-  margin-left: 49px;
-  margin-right: 49px;
+  border-radius: 30px;
+  margin-left: 29px;
+  margin-right: 29px;
 }
 
 .container-item:hover, 
@@ -37,16 +37,15 @@ header, h1 {
 }
 
 .container-item2 {
-  width: 100%;
+  width: 90%;
   border: 0;
-  /* padding: 24px; */
   flex-basis: 50%;
   box-shadow: 3px 3px 90px -20px rgb(75, 9, 8);
   padding: 2em 2em;
   background: rgb(106, 12, 11);
-  border-radius: 50px;
-  margin-left: 49px;
-  margin-right: 49px;
+  border-radius: 30px;
+  margin-left: 29px;
+  margin-right: 29px;
 }
 
 .container-result {

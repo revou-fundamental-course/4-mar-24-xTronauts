@@ -57,5 +57,5 @@ var age = document.getElementById("age");
                 result = 'Cosmic Colossus! Your size is awe-inspiring! To optimize your health and hero potential, consult a doctor to create a personalized plan for a healthy diet and exercise. Remember, even giants need to take care of themselves!';
             }
 
-            document.querySelector(".keterangan").innerHTML = `<span id="keterangan">${result}</span>`;
+            document.querySelector(".description").innerHTML = `<span id="description">${result}</span>`;
         }
