@@ -10,103 +10,84 @@
 
 <body>
     <header>
-        <h1>Hero Mass Index Calculator</h1>
+        <h1>BMI Calculator</h1>
     </header>
+
     <main>
         <div class="main-container">
-            <!-- Form Display -->
             <div class="container-item">
-                <section>
-                    <p class="description">HMI's your superhero starter kit! Like <strong>Iron Man vs. Hulk</strong>, it uses height and weight to see if you're built to fly or bring the fluffy justice. Scale time, true believer - clouds or cuddles?</p>
-                </section>
+                <h2>Hero Mass Index (HMI) Calculator</h2>
+                <p style="text-align: justify;">HMI's your superhero starter kit! Like <strong>Iron Man vs. Hulk</strong>, 
+                    it uses height and weight to see if you're built to fly or bring the fluffy justice. Scale time, true believer - clouds or cuddles?</p>
                 <section class="container-form">
-                    <div class="container">
-                        <h5> Choose your Gender:</h5>
-                        <input type="radio" name="sex" id="sex-men" class="image-radio">
-                        <label for="sex-men" class="image-label">
-                            <img src="./asset/hero_boy.png" alt="Male Image" class="image">
-                            <div class="middle">
-                                <div class="text">Male</div>
-                            </div>
-                        </label>
-                    
-                        <input type="radio" name="sex" id="sex-women" class="image-radio">
-                        <label for="sex-women" class="image-label">
-                            <img src="./asset/hero_girl.png" alt="Female Image" class="image">
-                            <div class="middle">
-                                <div class="text">Female</div>
-                            </div>
-                        </label>
-                    </div>
-                    <div>
-                        <label>Height (cm)</label><br />
-                        <input type="number" name="hight" class="form-item">
-                    </div>
-                    <div>
-                        <label>Weight (kg)</label><br />
-                        <input type="number" name="weight" class="form-item">
-                    </div>
-                    <div>
-                        <label>Age</label><br />
-                        <input type="number" name="age" class="form-item">
-                    </div>
-                    <div class="button">
-                    <button type="button" id="submit-button"><strong>Assemble!</strong> Calculate Hero Mass Index (HMI)</button>
-                    <button type="button" id="reset-button"><strong>Recalibrate</strong></button>
-                    </div>
+                    <form>
+                        <div>
+                            <label for="age">Age<br />
+                            <input type="number" class="form-item" id="age" required></label>
+                        </div>
+                        <div>
+                            <label for="height">Height (cm)<br />
+                            <input type="number" class="form-item" id="height" required></label>
+                        </div>
+                        <div>
+                            <label for="weight">Weight (kg)<br />
+                            <input type="number" class="form-item" id="weight" required></label>
+                        </div>
+                        <div>
+                            <label class="custom-radio">Sex<br />
+                            <input type="radio" name="gender" id="male" value="laki-laki">Male
+                            <input type="radio" name="gender" id="female" value="perempuan">Female</label>
+                        </div>
+    
+                        <div>
+                            <button class="calculate" id="submit" type="button" onclick="calculate(); textImt();">Reassemble</button>
+                            <button type="reset" value="reset">Recalibrate</button>
+                        </div>
+                    </form>
                 </section>
-                <div class="feature">
-                    <ol> <h3>Feature Advantages</h3>
-                        <hr>
-                        <li><strong>Suit Up!</strong> We start by measuring your "hero weight" that's just your regular weight.</li>
-                        <li><strong>Calling Captain Ideal?</strong> BMI checks your weight against height to see if it falls in the "superhero landing zone."</li>
-                        <li><strong>Mission: Get Fit!</strong> If your weight needs a sidekick for support, a personalized "weight loss workout" gets prepped to help you reach your fitness goals!</li>
-                        <hr>
-                    </ol>
-                </div>
-                <section>
-                    <div class="item">
-                        <p><strong>Important Note:</strong> This BMI calculator is for adult men and women only (pregnant and breastfeeding women should chat with a doctor first). Remember, the BMI result is just a starting point. Always consult a healthcare professional for personalized advice.</p>
-                        <p><strong>Ready to suit up?</strong> Let's find your BMI! BMI stands for Body Mass Index, and it's a tool that uses your height and weight to estimate your weight category.</p>
+                <h3>Feature Advantages</h3>
+                <ol style="margin-left: -24px; margin-top: 20px;">
+                    <li><strong>Suit Up!</strong> We start by measuring your "hero weight" that's just your regular weight.</li>
+                    <li>Calling Captain Ideal?</strong> BMI checks your weight against height to see if it falls in the "superhero landing zone."</li>
+                    <li>Mission: Get Fit!</strong> If your weight needs a sidekick for support, a personalized "weight loss workout" gets prepped to help you reach your fitness goals!</li>
+                </ol>
+            </div>
+    
+            <div class="container-item2">
+                <h2 style="text-align: center;">Result</h2>
+                <section class="container-result">
+                    <h4><strong>Hero Mass Revealed!</strong> Your HMI (Hero Mass Index) is in ...</h4>
+                    <div id="result">0</div>
+                    <h4 class="comment"></h4>
+                    <div id="keterangan">
+                        <p class="keterangan"></p>
                     </div>
-                </section>
-                    </div>
-            <!-- Form Result -->
-            <div class="container-result">
-                <h2>Result</h2>
-                <!--<section class="container-result">
-                    <h4>Uh Oh, Warning Lights!</h4>
-                    <h1>0</h1>
-                    <h4>Calling Captain Chunky? Your weight falls into the "overweight" category.</h4>
                     <button type="button"><strong>Ready to Get Fit?</strong><br /> Don't worry, we won't download your "results" as a villain might!</button>
                 </section>
-                <div class="item">
-                    <p>Your HMI (Hero Mass Index) might be a bit on the "needs a training montage" side.</p>
-                    <p>Looking a little more <strong>Hulk smash</strong> than <strong>Iron Man Suit</strong> these days? Time to level up your fitness game!</p>
-                    <p>Gotta fuel your inner hero, right? Mastering your diet and exercise routine is key to peak performance.</p>
-                    <p>Shedding some extra weight can help you reach your peak superhero potential.</p>
-                </div>
-                <div class="button.result">
-                    <button type="button"><strong>Team up with a nutritional sidekick through our app!</strong>
-                    <button type="button"><strong>Snag a consult with a registered nutritional guru online!</strong>
-                </div>
-                <div class="item">
-                    <p>While HMI is a good starting point, true hero health requires a full checkup with a doc. Talk to them about any concerns you might have.</p>
-                </article>
-                <div class="item">
-                    <ul><h3>Even heroes can face health villains like:</h3></ul>
-                        <li>Diabetes</li>
-                        <li>High Blood Pressure</li>
-                        <li>Heart Trouble</li>
-                        <li>Joint Pain</li>
+
+                <h3>Warning Sign !</h3>
+                <p style="text-align: justify; margin-top: -10px;"><strong>Important Note:</strong> This BMI calculator is for adult men and women only 
+                    (pregnant and breastfeeding women should chat with a doctor first). Remember, the BMI result is just a starting point. 
+                    Always consult a healthcare professional for personalized advice.</p>
+                <ul><h3>Even heroes can face health villains like:</h3></ul>
+                    <li>Diabetes</li>
+                    <li>High Blood Pressure</li>
+                    <li>Heart Trouble</li>
+                    <li>Joint Pain</li>
                 </ul>
-                <p>Let's keep those villains at bay!</p>
-                </div>-->
+                <p style="text-align: center;">Let's keep those villains at bay!</p>
             </div>
         </div>
     </main>
-    <footer></footer>
-    <script src="js/script.js"></script>
+
+    
+    <footer id="footer">
+        <div>
+            <p>Copyright - Prisnandar Wira Pratama - RevoU 2024</p>
+        </div>
+    </footer>
 </body>
 
+<script src="js/script.js"></script>
+</head>
 </html>
